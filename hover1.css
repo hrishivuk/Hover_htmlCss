@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+a {
+  box-shadow: inset 0 0 0 0 #212a3e;
+  color: #212a3e;
+  padding: 0 0.75rem;
+  border-radius: 5px;
+  /* margin: 0 -0.25rem; */
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #9ba4b5;
+  box-shadow: inset 300px 0 0 0 #212a3e;
+}
+
+a {
+  color: #212a3e;
+  font-family: "Poppins", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background-color: #f1f6f9;
+}

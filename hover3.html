@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hover this link</title>
+    <style>
+      a {
+        background-image: linear-gradient(
+          to right,
+          #ff004f,
+          #ff004f 50%,
+          #000 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+      }
+
+      a:before {
+        content: "";
+        background: #ff004f;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      a:hover {
+        background-position: 0;
+      }
+
+      a:hover::before {
+        width: 100%;
+      }
+
+      /* Presentational Styles */
+      body {
+        display: grid;
+        font-family: "Poppins", sans-serif;
+        font-size: 27px;
+        font-weight: 700;
+        height: 100vh;
+        place-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="">Hover This Link</a>
+  </body>
+</html>
